@@ -12,10 +12,11 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use("/api", openaiRoutes);
 app.get("/", (req, res) => {
   res.send("Hello");
 });
+app.use("/api", openaiRoutes);
+
 
 // Start server
 app.listen(port, () => console.log(`Server running on port ${port}`));
