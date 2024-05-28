@@ -13,7 +13,7 @@ const app = express();
 
 // Routes
 app.use("/", (req, res) => {
-  res.send("Hello");
+  res.send("Hello Backend");
 });
 // app.use("/api", openaiRoutes);
 
